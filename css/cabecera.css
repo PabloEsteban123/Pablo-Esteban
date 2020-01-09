@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Jaldi:400,700|Permanent+Marker&display=swap');
+#menu {
+    padding: 2%;
+    overflow: hidden;
+    background: var(--blue1);
+    color: var(--white);
+    z-index: 1;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#menu h1 {
+    float: left;
+    padding-left: 8%;
+    font-family: 'Permanent Marker', cursive;
+    font-size:40px;
+}
+
+#menu ul {
+    width: 40%;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 30%;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 7px 15px 7px 15px;
+}
+
+#menu ul li a {
+    color: var(--white);
+    transform: uppercase;
+    transition: 0.5s;
+}
+
+#menu ul li a:hover {
+    color: var(--ocre);
+    text-decoration: underline;
+}
+
+#menu ul #unete {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: var(--white);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    #menu ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--blue2);
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding-right: 0%;
+    }
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+    nav ul li a {
+        font-size: 40px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: var(--orange);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu ul {
+        top: 90px;
+    }
+}
+
+@media (max-width: 414px) {
+    #menu ul {
+        top: 90px;
+    }
+}
+
+@media (max-width: 375px) {
+    #menu ul {
+        top: 90px;
+    }
+}
+
+@media (max-width: 360px) {
+    #menu ul {
+        top: 90px;
+    }
+}
+
+header ul li {
+    padding: 1%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 2%;
+}

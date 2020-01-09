@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barcelona Feed</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css/mision.css">
+    <link rel="stylesheet" href="css/educacion.css">
+    <link rel="stylesheet" href="css/alimentacion.css">
+    <link rel="stylesheet" href="css/salud.css">
+    <link rel="stylesheet" href="css/unete.css">
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="js/xzoom.js"></script>
+</head>
+
+<body onload="init()">
+    <div id="contenedor">
+        <nav id="menu">
+            <h1>BARCELONA FEED</h1>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            <ul>
+                <li id="misionLink"><a href="#misionText">MISIÓN</a></li>
+                <li id="educacionLink"><a href="#educacionText">EDUCACIÓN</a></li>
+                <li id="alimentacionLink"><a href="#alimentacionText">ALIMENTACIÓN</a></li>
+                <li id="saludLink"><a href="#saludDiv">SALUD</a></li>
+                <li id="unete"><a href="#uneteDiv">ÚNETE</a></li>
+            </ul>
+        </nav>
+        <section id="misionDiv">
+            <div id="textVideo">
+                <div id="misionText">
+                    <h3>MISIÓN</h3>
+                    <p> Somos una ONG, aconfesional y apolítica con un reto desde que nacimos en 1996: ayudar todos los días en la alimentación de los más necesitados en nuestro país. Porque pasar hambre es el mayor riesgo a la salud en el mundo (según la FAO).
+
+                        Y lo hacemos respetando la libertad e igualdad de las personas con y por las que trabajamos, siguiendo además los principios y valores que rigen a la Federación y a sus asociados.</p>
+                    <button onclick="window.location.href ='#uneteDiv'">ÚNETE</button>
+                </div>
+                <div id="misionVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SLK1iLgaERg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="iconos">
+                <div id="divEducacion" class="icono">
+                    <a href="#educacionText"><img src="./img/education.svg" alt="educacion" id="educacionImg"></a>
+                    <p>EDUCACIÓN</p>
+                </div>
+                <div id="divAlimentacion" class="icono">
+                    <a href="#alimentacionText"><img src="./img/eating.svg" alt="comida" id="comidaImg"></a>
+                    <p>ALIMENTACIÓN</p>
+                </div>
+                <div id="divSalud" class="icono">
+                    <a href="#saludDiv"><img src="./img/health.svg" alt="salud" id="saludImg"></a>
+                    <p>SALUD</p>
+                </div>
+            </div>
+        </section>
+        <section id="educacionDiv">
+            <div id="educacionText">
+                <h3 id="educacionTitulo">EDUCACIÓN</h3>
+                <p>El derecho a la educación es un derecho fundamental de todos los seres humanos que les permite adquirir conocimientos y alcanzar así una vida social plena. El derecho a la educación es vital para el desarrollo económico, social y cultural de todas las sociedades. Sin embargo continúa siendo inaccesible para miles de niños del mundo.</p>
+            </div>
+            <div id="galeriaFotos">
+                <img class="xzoom" src="./img/pruebas/education1.jpg" xoriginal="./img/pruebas/education1.jpg" />
+
+                <div class="xzoom-thumbs">
+                    <a href="./img/pruebas/education1.jpg">
+                        <img class="xzoom-gallery" width="80" src="./img/pruebas/education1.jpg" xpreview="./img/preview/veggies.jpg">
+                    </a>
+                    <a href="./img/pruebas/education2.jpg">
+                        <img class="xzoom-gallery" width="80" src="./img/pruebas/education2.jpg">
+                    </a>
+                    <a href="./img/pruebas/education3.jpg">
+                        <img class="xzoom-gallery" width="80" src="./img/pruebas/education3.jpg">
+                    </a>
+                    <a href="./img/pruebas/education4.jpg">
+                        <img class="xzoom-gallery" width="80" src="./img/pruebas/education4.jpg">
+                    </a>
+                    <a href="./img/pruebas/education6.jpg">
+                        <img class="xzoom-gallery" width="80" src="./img/pruebas/education6.jpg">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="alimentacionDiv">
+            <div id="alimentacionText">
+                <h3>ALIMENTACIÓN</h3>
+                <p>Con el objetivo de ayudar y cubrir las necesidades básicas de las familias más necesitadas de todo el país, García Carrión ha aportado su particular granito de arena a un proyecto imprescindible para nuestra sociedad: la ayuda diaria en la alimentación de la gente con menos oportunidades.</p>
+            </div>
+            <div id="alimentacionImg">
+                <img src="./img/pruebas/eat4.jpg" alt="chef">
+            </div>
+        </section>
+        <section id="saludDiv">
+            <div id="saludImagen">
+                <img src="./img/pruebas/eat2.jpg" alt="cookie">
+            </div>
+            <div id="saludText">
+                <h3>SALUD</h3>
+                <p>Barcelona Feed promociona y desarrolla proyectos innovadores encaminados a difundir el conocimiento de las Ciencias de la Salud, formar a la población general y optimizar la utilización de los recursos disponibles.</p>
+            </div>
+        </section>
+        <section id="uneteDiv">
+            <div id="titulo">
+                <h2>ÚNETE A BARCELONA FEED</h2>
+            </div>
+            <div id="tarifas">
+                <div id="miembroBasic">
+                    <h3><span>25</span>€/mes</h3>
+                    <h4>MIEMBRO BASIC</h4>
+                    <p>Recibirás una insignia de Miembro Básic y nuestro boletín de noticias mensual. <br>También podrás asistir a gran parte de nuestras reuniones y a los eventos de nuestros colaboradores.</p>
+                </div>
+                <div id="miembroPlus">
+                    <h3><span>100</span>€/mes</h3>
+                    <h4>MIEMBRO PLUS</h4>
+                    <p>Recibirás insignia Miembro Plus y podrás escoger a cuales de nuestros proyectos destinar más fondos, asistir a reuniones y eventos PLUS ademas de participar en la toma de decisiones.</p>
+                </div>
+            </div>
+            <div id="formulario">
+                <div id="escoger">
+                    <form>
+                        <label for="tarifa" id="tarifa-label">Escoge tu tarifa:</label>
+                        <input type="checkbox" value="basic" />Miembro basic <br>
+                        <input type="checkbox" value="plus" />Miembro plus
+                    </form>
+                </div>
+                <div id="datos">
+                    <form>
+                        <label for="nombre" id="nombre-label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required><br>
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Introduce tu correo" required><br>
+                        <label for="edad" id="edad-label">Edad (opcional):</label>
+                        <input type="number" id="edad" name="edad" min="10" max="99" placeholder="Edad"><br>
+                        <button type="submit" id="submit">Unirse</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

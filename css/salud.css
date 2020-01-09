@@ -1,0 +1,36 @@
+#saludDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    background: var(--grey);
+}
+
+#saludDiv #saludImagen {
+    align-self: center;
+    max-width: 400px;
+    padding-left: 3%;
+}
+
+#saludDiv #saludText {
+    width: 45%;
+    min-width: 350px;
+    color: var(--white);
+    padding: 5%;
+    padding-left: 5%;
+}
+
+#saludDiv #saludText h3 {
+    font-size: 50px;
+    border-bottom: 2px solid var(--white);
+    padding: 0 0 4px;
+}
+
+#saludDiv #saludText p {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+}

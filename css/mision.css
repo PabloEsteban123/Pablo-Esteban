@@ -1,0 +1,83 @@
+#misionDiv {
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    padding-bottom: 4%;
+}
+
+#misionDiv #textVideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#textVideo #misionText {
+    width: 45%;
+    min-width: 340px;
+    color: var(--black);
+    padding: 5%;
+    padding-left: 5%;
+}
+
+#textVideo #misionText h3 {
+    font-size: 50px;
+    border-bottom: 2px solid var(--black);
+    padding: 0 0 4px;
+}
+
+#textVideo #misionText p {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#textVideo #misionText button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    background: var(--orange);
+    cursor: pointer;
+}
+
+#textVideo #misionText button:hover {
+    background: var(--ocre);
+}
+
+#textVideo #misionVideo {
+    margin-right: 3%;
+    align-self: center;
+}
+
+#misionDiv #iconos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#misionDiv #iconos div {
+    max-width: 250px;
+    margin-top: 0.5%;
+    margin-bottom: 3%;
+}
+
+#misionDiv #iconos div img {
+    display: block;
+    transition: 0.5s;
+}
+
+#misionDiv #iconos div img:hover {
+    transform: scale(1.1);
+}
+
+#misionDiv #iconos div p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}

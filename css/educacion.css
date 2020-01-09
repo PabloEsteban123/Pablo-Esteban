@@ -1,0 +1,43 @@
+#educacionDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: var(--grey);
+    padding-top: 8%;
+    padding-bottom: 4%;
+}
+
+#educacionDiv #educacionText {
+    width: 45%;
+    min-width: 350px;
+    color: var(--white);
+    padding: 5%;
+    padding-left: 5%;
+}
+
+#educacionDiv #educacionText h3 {
+    font-size: 50px;
+    border-bottom: 2px solid var(--white);
+    padding: 0 0 4px;
+}
+
+#educacionDiv #educacionText p {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#educacionDiv #galeriaFotos {
+    align-self: center;
+    max-width: 375px;
+    margin-right: 4%;
+}
+
+#educacionDiv #galeriaFotos .xzoom-thumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

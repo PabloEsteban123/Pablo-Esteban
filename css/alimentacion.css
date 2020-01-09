@@ -1,0 +1,36 @@
+#alimentacionDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--white);
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+#alimentacionDiv #alimentacionText {
+    width: 45%;
+    min-width: 350px;
+    color: var(--black);
+    padding: 5%;
+    padding-left: 5%;
+}
+
+#alimentacionDiv #alimentacionText h3 {
+    font-size: 40px;
+    border-bottom: 2px solid var(--black);
+    padding: 0 0 4px;
+}
+
+#alimentacionDiv #alimentacionText p {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#alimentacionDiv #alimentacionImg {
+    align-self: center;
+    max-width: 400px;
+    margin-right: 4%;
+}

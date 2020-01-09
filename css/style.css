@@ -1,0 +1,57 @@
+:root {
+    --blue2: rgba(55, 6, 153, 1);
+    --ocre: rgba(204, 175, 94, 1);
+    --blue1: rgba(14, 33, 102, 1);
+    --grey: rgba(174, 175, 212, 1);
+    --orange: rgba(230, 123, 9, 1);
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Jaldi:400,700|Permanent+Marker&display=swap');
+html,
+body {
+    height: 100%;
+    font-family: 'Jaldi', sans-serif !important;
+}
+
+#contenedor {
+    background: var(--white);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+a:link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ocre);
+}
+
+a:active {
+    color: var(--white);
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 290px;
+    margin: -200px 0 0;
+}
